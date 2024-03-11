@@ -14,7 +14,7 @@
  int main(void)
  {	
  	u8 t=0;	
-//	u8 i=0;
+//	u8 i;
 //	u8 n=0;
 //	u8 d=0;
 //	unsigned cmdn=1;
@@ -101,7 +101,7 @@
 //			}
 //			else i=0;
 			
-			OLED_Roll(0, 15, 3);
+			OLED_Roll(1, 10, 3);
 			
 //			LED0=!LED0;
 		}	

@@ -33,3 +33,4 @@
 ..\obj\rtc.o: ..\SYSTEM\sys\sys.h
 ..\obj\rtc.o: ..\SYSTEM\usart\usart.h
 ..\obj\rtc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\rtc.o: ..\HARDWARE\LED\led.h

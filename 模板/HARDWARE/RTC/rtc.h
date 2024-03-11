@@ -21,6 +21,11 @@ typedef struct
 }_calendar_obj;					 
 extern _calendar_obj calendar;	//日历结构体
 
+
+/*是否允许调整时间*/
+#define TIME_PRJ_PERMISSION 0x5051
+#define TIME_PRJ_NOPERMISSION 0x5050
+
 extern u8 const mon_table[12];	//月份日期数据表
 void Disp_Time(u8 x,u8 y,u8 size);//在制定位置开始显示时间
 void Disp_Week(u8 x,u8 y,u8 size,u8 lang);//在指定位置显示星期

@@ -15,6 +15,7 @@
 //[6]0 1 2 3 ... 127	
 //[7]0 1 2 3 ... 127 			   
 
+
 /**********************************************
 //IIC Start
 **********************************************/
@@ -388,10 +389,17 @@ void OLED_Roll(u8 dir, u8 spd, u8 pos)
 			}//仅刷新滑动模块所在页
 				
 			/*-------滑动模块-----------*/
-			OLED_ShowCHinese(spd*i+6,pos*2,3);//滑动实验模组
-			OLED_ShowCHinese(spd*i+24,pos*2,4);//滑动实验模组
-			OLED_ShowCHinese(spd*i+42,pos*2,5);
-			OLED_ShowCHinese(spd*i+60,pos*2,6);
+//			OLED_ShowCHinese(spd*i+6,pos*2,3);//滑动实验模组
+//			OLED_ShowCHinese(spd*i+24,pos*2,4);//滑动实验模组
+//			OLED_ShowCHinese(spd*i+42,pos*2,5);
+//			OLED_ShowCHinese(spd*i+60,pos*2,6);
+			OLED_ShowCHinese(spd*i+60,pos*2,(9));
+			delay_ms(300);
+			OLED_ShowCHinese(spd*i+60,pos*2,(8));
+			delay_ms(300);
+			OLED_ShowCHinese(spd*i+60,pos*2,(9));
+//			delay_ms(300);
+//			OLED_ShowCHinese(spd*i+60,pos*2,(8));
 			/*--------------------------*/
 			i++;
 				
@@ -416,6 +424,7 @@ void OLED_Roll(u8 dir, u8 spd, u8 pos)
 			OLED_ShowCHinese(86-spd*i,pos*2,4);//滑动实验模组
 			OLED_ShowCHinese(104-spd*i,pos*2,5);
 			OLED_ShowCHinese(122-spd*i,pos*2,6);
+			
 			/*--------------------------*/
 			i++;
 				
